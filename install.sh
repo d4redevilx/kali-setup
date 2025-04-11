@@ -15,7 +15,7 @@ ENDCOLOR="\e[0m"
 
 echo -e "${YELLOW}[+] Updating system...${ENDCOLOR}"
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install xclip rlwrap -y
+sudo apt-get install xclip rlwrap bloodhound flameshot -y
 
 # ----------------- Installation of useful tools -----------------
 
