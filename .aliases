@@ -1,0 +1,7 @@
+alias l='lsd'
+alias ls='lsd -l'
+alias ll='lsd -l'
+alias lla='lsd -la'
+alias cat='/usr/bin/batcat'
+alias update='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
+alias activeenv='source /home/kali/venv/bin/activate'
