@@ -73,11 +73,6 @@ cp .aliases ~/.aliases
 cp custom_functions.sh ~/custom_functions.sh
 chmod +x ~/custom_functions.sh
 
-# ----------------- Installing ZSH and Oh-My-ZSH -----------------
-
-echo -e "${YELLOW}[+] Installing Oh-My-ZSH...${ENDCOLOR}"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Include configurations in .zshrc
 echo -e "\n# Custom Aliases" >> ~/.zshrc
 echo 'source ~/.aliases' >> ~/.zshrc
