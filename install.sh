@@ -41,29 +41,6 @@ sudo dpkg -i lsd_1.1.5_amd64.deb
 echo -e "${YELLOW}[+] Creating work directories...${ENDCOLOR}"
 mkdir -p ~/htb ~/offsec ~/thm ~/pgp ~/labs ~/VPN
 
-# ----------------- Downloading pentesting tools -----------------
-
-# Pentesting tools
-echo -e "${YELLOW}[+] Downloading pentesting tools...${ENDCOLOR}"
-
-# Windows tools
-wget -q -O "$TOOLS_DIR/SharpView.exe" "https://github.com/PowerShellMafia/SharpView/releases/download/1.0/SharpView.exe"
-wget -q -O "$TOOLS_DIR/SharpUp.exe" "https://github.com/PowerShellMafia/SharpUp/releases/download/1.0/SharpUp.exe"
-wget -q -O "$TOOLS_DIR/Seatbelt.exe" "https://github.com/GhostPack/Seatbelt/releases/download/v1.5/Seatbelt.exe"
-wget -q -O "$TOOLS_DIR/Rubeus.exe" "https://github.com/GhostPack/Rubeus/releases/download/v1.4.2/Rubeus.exe"
-wget -q -O "$TOOLS_DIR/pspy" "https://github.com/DominicBreuker/pspy/releases/download/v1.3.0/pspy64"
-wget -q -O "$TOOLS_DIR/PrintSpoofer64.exe" "https://github.com/byt3bl33d3r/PrintSpoofer/releases/download/1.0/PrintSpoofer64.exe"
-wget -q -O "$TOOLS_DIR/PowerView.ps1" "https://github.com/PowerShellMafia/PowerSploit/raw/master/Recon/PowerView.ps1"
-wget -q -O "$TOOLS_DIR/PowerUp.ps1" "https://github.com/PowerShellMafia/PowerSploit/raw/master/Privesc/PowerUp.ps1"
-wget -q -O "$TOOLS_DIR/mimikatz.exe" "https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0/mimikatz.exe"
-wget -q -O "$TOOLS_DIR/chisel.exe" "https://github.com/jpillora/chisel/releases/download/v1.10.1/chisel_windows_amd64.exe"
-
-# Linux tools
-wget -q -O "$TOOLS_DIR/chisel" "https://github.com/jpillora/chisel/releases/download/v1.10.1/chisel_linux_amd64"
-chmod +x "$TOOLS_DIR/chisel"
-wget -q -O "$TOOLS_DIR/accesschk.exe" "https://github.com/AccessChk/AccessChk/releases/download/v1.5/accesschk.exe"
-wget -q -O "$TOOLS_DIR/linpeas.sh" "https://github.com/carlospolop/PEASS-ng/blob/master/linPEAS/linpeas.sh"
-
 # ----------------- Copying configuration files -----------------
 
 echo -e "${YELLOW}[+] Copying configuration files...${ENDCOLOR}"
